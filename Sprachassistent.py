@@ -1,5 +1,4 @@
 import configparser
-import assemblyai as aai
 import elevenlabs
 import openai
 import speech_recognition as sr
@@ -7,7 +6,6 @@ import speech_recognition as sr
 config = configparser.ConfigParser()
 config.read('config.ini')
 
-aai.settings.api_key = config.get('API_KEYS', 'AAI_API_KEY')
 openai.api_key = config.get('API_KEYS', 'OPENAI_API_KEY')
 elevenlabs.set_api_key(config.get('API_KEYS', 'ELEVENLABS_API_KEY'))
 
