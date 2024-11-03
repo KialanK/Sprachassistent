@@ -47,7 +47,8 @@ if __name__ == "__main__":
     # Antwort zu Audio convertieren und wiedergeben
     audio = elevenlabs.generate(
         text=response.choices[0].text,
-        voice="Daniel"
+        voice="Daniel",
+        model="eleven_multilingual_v2"
     )
 
     print("\nAI:", response.choices[0].text, end="\r\n")
