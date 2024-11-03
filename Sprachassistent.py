@@ -34,7 +34,7 @@ if __name__ == "__main__":
     response = openai.Completion.create(
         engine="gpt-3.5-turbo-instruct",
         prompt=spoken_text,
-        max_tokens=1000,
+        max_tokens=50,
         n=1,
         stop=None,
         temperature=0.5,
