@@ -1,6 +1,6 @@
 # Speech Assistant
 
-This is a simple speech recognition and response program written in Python. It uses the microphone as an audio source, recognizes the spoken text using Google Speech Recognition, and generates a response using OpenAI's GPT-3.5-turbo-instruct engine. The response is then converted to audio and played back.
+This is a simple speech recognition and response program written in Python. It uses the microphone as an audio source, recognizes the spoken text using Google Speech Recognition, and generates a response using OpenAI's GPT-3.5-turbo-instruct engine. The response is then converted to audio and played back. Pleas set you API Keys in the config.ini File
 
 ## Installation
 
@@ -14,7 +14,6 @@ pipenv install
 
 This will create a new virtual environment, if one doesn't already exist, and install the packages specified under the `[packages]` section. The packages currently specified are:
 
-- assemblyai
 - elevenlabs
 - openai
 - SpeechRecognition
